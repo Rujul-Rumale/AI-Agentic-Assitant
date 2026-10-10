@@ -41,3 +41,6 @@ pytest -v (asyncio auto). 60 tests.
 - Read-unanswered ack relies on bridge forwarding read events (async). If not emitted, that path remains dormant; on-demand polling not implemented.
 - Group chats monitored but never auto-acked to; actionable items summarized in self-chat.
 - No secrets committed; data/*.db* and .env excluded.
+## License
+
+Released under the MIT License. Copyright (c) 2026 Rujul Rumale. See [LICENSE](LICENSE).
