@@ -1,0 +1,1 @@
+"""Task package — creation, tracking, resolution (spec §31-32)."""

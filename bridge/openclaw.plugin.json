@@ -1,0 +1,16 @@
+{
+  "id": "whatsapp-agent-bridge",
+  "name": "WhatsApp Agent Bridge",
+  "description": "Forwards inbound WhatsApp messages to the Python agent loopback and exposes a local /wa/send route so the Python policy engine controls all actual sends.",
+  "categories": ["other"],
+  "contracts": {},
+  "activation": { "onStartup": true },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "pythonUrl": { "type": "string" },
+      "bridgePort": { "type": "number" }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+agent:
+  name: "Rujul's Agent"
+  dry_run: false
+
+timezone: "Asia/Kolkata"
+
+whatsapp:
+  provider: "openclaw"        # mock | openclaw (real WhatsApp via OpenClaw gateway bridge)
+  self_chat_id: ""            # set SELF_CHAT_ID env to your WhatsApp JID (e.g. +919999999999@s.whatsapp.net)
+  bridge_url: "http://127.0.0.1:18788/wa"
+
+monitoring:
+  private_chats: true
+  group_chats: true
+  private_unread_threshold_minutes: 1
+  private_read_unanswered_threshold_minutes: 60
+
+groups:
+  monitor: true
+  automatic_actions: false
+
+llm:
+  provider: "nvidia_nim"      # mock | nvidia_nim (set NVIDIA_NIM_API_KEY + NVIDIA_NIM_MODEL)
+  model: ""
+  confidence_threshold: 0.75
+  nim_base_url: "https://integrate.api.nvidia.com/v1"
+
+acknowledgement:
+  enabled: true
+  minimum_confidence: 0.75
+  unread:
+    enabled: true
+    delay_minutes: 1
+  read_unanswered:
+    enabled: true
+    delay_minutes: 60
+
+tasks:
+  enabled: true
+
+memory:
+  enabled: false
+
+notifications:
+  self_chat: true
+
+rate_limits:
+  max_ack_per_chat_per_day: 2
+  minimum_ack_interval_minutes: 60
+
+scheduler:
+  poll_interval_seconds: 1.0
+
+bridge:
+  host: "127.0.0.1"
+  port: 8090
+
+demo:
+  simulate_on_start: false
+  message: "Hey, can you send me the latest telemetry report?"
+  sender_id: "demo-contact"

@@ -1,0 +1,1 @@
+"""Monitoring package — state machine, unread tracking, scheduler (spec §17-18, §44-46)."""

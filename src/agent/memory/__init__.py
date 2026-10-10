@@ -1,0 +1,1 @@
+"""Memory package (spec §51-52). Off by default; minimal structured KV store."""

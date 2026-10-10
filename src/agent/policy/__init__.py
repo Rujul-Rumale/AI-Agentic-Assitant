@@ -1,0 +1,1 @@
+"""Policy package — deterministic permission enforcement (spec §54-55)."""

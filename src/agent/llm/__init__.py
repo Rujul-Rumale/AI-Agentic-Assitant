@@ -1,0 +1,1 @@
+"""LLM package — NIM provider + deterministic mock behind one interface (spec §22)."""

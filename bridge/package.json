@@ -1,0 +1,14 @@
+{
+  "name": "whatsapp-agent-bridge",
+  "version": "1.0.0",
+  "type": "module",
+  "peerDependencies": {
+    "openclaw": ">=2026.3.24-beta.2"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "compat": {
+      "minGatewayVersion": "2026.3.24-beta.2"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"""Actions package — audited, permission-gated effects (spec §60-61)."""

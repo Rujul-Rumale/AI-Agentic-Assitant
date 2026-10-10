@@ -1,0 +1,1 @@
+"""Conversation context package (spec §10-13)."""
